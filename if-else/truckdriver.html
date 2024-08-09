@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Truck Driver</title>
+</head>
+
+<body>
+    <script>
+        var gen = prompt("Enter your Gender");
+        var age = prompt("Enter your Age")
+        var status = prompt("Are You Married or Unmarried")
+        if (gen == "male") {
+            if (age > 18 && age <= 40) {
+                if (status == "married") {
+                    alert("aajao truck chlane");
+                } else {
+                    alert("sorry bhai");
+                }
+            } else {
+                alert("sorry bhai");
+            }
+        }
+        if (gen == "female") {
+            if (age > 20 && age <= 30) {
+                if (status == "unmarried") {
+                    alert("aajao truck chlane madam");
+                } else {
+                    alert("sorry bhen");
+                }
+            } else {
+                alert("sorry bhen");
+            }
+        }
+    </script>
+</body>
+
+</html>
