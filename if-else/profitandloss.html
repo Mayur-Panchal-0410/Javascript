@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var selling_price = 7000;
+        var cost_price = 50000;
+
+        profit = selling_price - cost_price;
+        loss = cost_price - selling_price;
+        profit_percent = profit / cost_price * 100;
+        loss_percent = loss / cost_price * 100;
+        if (profit > loss) {
+            alert("uh have profit of " + profit + " with the percent of " + profit_percent+"%");
+        }
+        if (loss > profit) {
+            alert("uh have loss of " + loss + " with the percent of " + loss_percent+"%");
+        }
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var num = 861;
+        var numStr = num.toString();
+
+        var firstDigit = numStr.charAt(0);
+        var lastDigit = numStr.charAt(numStr.length - 1);
+
+
+        var swappedNumStr = lastDigit + numStr.slice(1, -1) + firstDigit;
+
+        console.log(swappedNumStr)
+
+    </script>
+</body>
+
+</html>

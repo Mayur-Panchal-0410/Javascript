@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            var angle1=40;
+            var angle2=70;
+            var angle3=70;
+
+            if(angle1==60 && angle2==60 && angle3==60){
+                alert("It is a equilateral triangle");
+            }
+            if((angle1!=angle2 && angle2!=angle3 && angle3!=angle1) && (angle1+angle2+angle3==180)){
+                alert("It is a scaler triangle");
+            }
+            if((angle1==angle2 || angle2==angle3 || angle3==angle1) && (angle1+angle2+angle3==180)){
+                alert("It is an isoceles triangle");
+            }
+            else{
+                alert("this is not a valid triangel")
+            }
+
+        </script>
+    </body>
+</html>

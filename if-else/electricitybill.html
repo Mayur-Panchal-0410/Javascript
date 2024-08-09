@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var unit_made = 200;
+
+        if (unit_made <= 50) {
+            bill = unit_made * 0.50;
+        }
+        else if (unit_made > 50 && unit_made <= 150) {
+            bill = unit_made * 0.75;
+        }
+        else if (unit_made > 150 && unit_made <= 250) {
+            bill = unit_made * 1.20;
+        }
+        bill_with_subcharged=bill*0.20;
+        bill=bill+bill_with_subcharged;
+        alert("Your Bill is: "+bill)
+    </script>
+</body>
+
+</html>Pooja would like to withdraw X $US from an ATM. The cash machine will only accept the transaction if X is a multiple of 5, and Pooja's account balance has enough cash to perform the withdrawal transaction (including bank charges). For each successful withdrawal the bank charges 0.50 $US.

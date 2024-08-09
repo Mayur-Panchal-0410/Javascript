@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+
+        var num = 785587;
+        var numStr = num.toString();
+        var reversed = ""
+        for (var i = numStr.length; i >= 0; i--) {
+            reversed = reversed + numStr.charAt(i)
+        }
+        if (numStr == reversed) {
+            console.log("it is a palindorme")
+        }
+        else {
+            console.log("not a plaindrome")
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let movie = [
+            { name: "Kalki", year: 2024, rating: 8, actor: ["Amitabh", "Prabhas", "Depika"] },
+            { name: "Stree", year: 2020, rating: 7, actor: ["Rajkumar", "Shrdha", "Pankaj"] },
+            { name: "Bhramastra", year: 2023, rating: 4, actor: ["Ranbeer", "Shahruk", "Alia"] },
+            { name: "Jawaan", year: 2022, rating: 8, actor: ["Shahruk", "Sanjay", "Nayanthara"] },
+            { name: "Radhe", year: 2021, rating: 6, actor: ["Salman", "Randeep", "Disha"] },
+        ];
+
+        let actorCount = {};
+
+        for (let i = 0; i < movie.length; i++) {
+            for (let j = 0; j < movie[i].actor.length; j++) {
+                let actorName = movie[i].actor[j];
+                if (actorCount[actorName]) {
+                    actorCount[actorName]++;
+                } else {
+                    actorCount[actorName] = 1;
+                }
+            }
+        }
+
+        for (let i = 0; i < movie.length; i++) {
+            let count = 0;
+            for (let j = 0; j < movie[i].actor.length; j++) {
+                if (actorCount[movie[i].actor[j]] > 1) {
+                    count++;
+                }
+            }
+            if (count > 0) {
+                console.log(movie[i].name);
+                console.log(movie[i].year);
+            }
+        }
+    </script>
+</body>
+
+</html>

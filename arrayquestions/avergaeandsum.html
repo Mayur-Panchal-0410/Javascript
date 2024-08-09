@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array</title>
+</head>
+<script>
+    var sum = 0;
+    var avg = 0;
+    var totalElement = 0;
+    let arr = [2, 39, 55, 7, 6, 8, 26, 84, 65, 15, 48, 91, 72];
+    for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+    }
+    console.log("sum of elements of array are:" + sum)
+
+    for (let i = 0; i < arr.length; i++) {
+        totalElement++;
+    }
+
+    avg = sum / totalElement;
+    console.log("The average of all elements is:" + avg)
+
+</script>
+
+</html>

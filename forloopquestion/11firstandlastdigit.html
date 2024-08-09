@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var num = 529;
+
+        for (var i = num; i > 9; i) {
+            i = Math.floor(i / 10)
+        }
+        console.log("first digit "+ i)
+
+        for (var i = num; i > 9; i) {
+            i = Math.floor(i % 10)
+        }
+        console.log("last digit " + i)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var num = 145;
+        var numStr = num.toString();
+        var sum = 0;
+
+        for (var i = 0; i < numStr.length; i++) {
+            var z = parseInt(numStr.charAt(i));
+            var fact = 1;
+
+            for (var j = 1; j <= z; j++) {
+                fact = fact * j
+            }
+            sum = sum + fact;
+        }
+        if (sum == num) {
+            console.log("it is a strong number")
+        }
+        else {
+            console.log("not a strong number")
+        }
+    </script>
+</body>
+
+</html>

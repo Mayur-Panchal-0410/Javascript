@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var target = 371;
+        var sum = 0;
+        var targetStr = target.toString();
+        var z;
+        for (var i = 0; i <= targetStr.length; i++) {
+            z = targetStr.charAt(i)
+            parseInt(z)
+            var sum = sum + z * z * z;
+            if (sum == target) {
+                // console.log("yes it is armstrong number")
+            }
+        }
+
+        if (sum == target) {
+            console.log("yes it is armstrong number")
+        }
+
+
+    </script>
+</body>
+
+</html>

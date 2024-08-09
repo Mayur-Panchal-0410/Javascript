@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var num = 529;
+
+        for (var i = num; i > 9; i) {
+            i = Math.floor(i / 10)
+            firstdigit = i;
+        }
+        console.log("first digit " + i)
+
+        for (var i = num; i > 9; i) {
+            i = Math.floor(i % 10)
+            lastdigit = i;
+        }
+        console.log("last digit " + i)
+
+        var sum = firstdigit + lastdigit;
+        console.log(sum)
+
+
+
+    </script>
+</body>
+
+</html>
