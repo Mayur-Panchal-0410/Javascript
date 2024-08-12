@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Function</title>
+</head>
+
+<body>
+    <label>First Value</label> <input type="number" id="first_val"><br><br>
+    <label>Second Value</label> <input type="number" id="second_val"><br><br>
+    <input type="button" onclick="add()" value="+"><br><br>
+    <input type="button" onclick="minus()" value="-"><br><br>
+    <input type="button" onclick="multiply()" value="*"><br><br>
+    <input type="button" onclick="divide()" value="/"><br><br>
+    <input type="button" onclick="percent()" value="%"><br><br>
+    <span id="show_here"><b>Show result</b></span>
+    <script>
+        function add() {
+            let val1 = parseInt(document.getElementById("first_val").value);
+            let val2 = parseInt(document.getElementById("second_val").value);
+            let total = val1+val2;
+            document.getElementById("show_here").innerHTML = total;
+        }
+        function minus() {
+            let val1 = parseInt(document.getElementById("first_val").value);
+            let val2 = parseInt(document.getElementById("second_val").value);
+            let total = val1-val2;
+            document.getElementById("show_here").innerHTML = total;
+        }
+        function multiply() {
+            let val1 = parseInt(document.getElementById("first_val").value);
+            let val2 = parseInt(document.getElementById("second_val").value);
+            let total = val1*val2;
+            document.getElementById("show_here").innerHTML = total;
+        }
+        function divide() {
+            let val1 = parseInt(document.getElementById("first_val").value);
+            let val2 = parseInt(document.getElementById("second_val").value);
+            let total = val1/val2;
+            document.getElementById("show_here").innerHTML = total;
+        }
+        function percent() {
+            let val1 = parseFloat(document.getElementById("first_val").value);
+            let val2 = parseFloat(document.getElementById("second_val").value);
+            let total = val2/val1*100;
+            document.getElementById("show_here").innerHTML = total;
+        }
+
+    </script>
+</body>
+
+</html>
